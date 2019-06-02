@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Каталог музыки</title>
+
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css">
+  <h1 align ="center">КАТАЛОГ МУЗЫКИ</h1>
+  <h1 align ="center">По десятилетиям</h1>
+  <div class="top_bar">
+  <input type="button" value=" Все " ><input  type="button" value=" 1950-е " ><input  type="button" value=" 1960-е"  ><input  type="button" value=" 1970-е"><input  type="button" value=" 1980-е">
+  <input  type="button" value=" 1990-е"><input  type="button" value=" 2000-е"><input  type="button" value=" 2010-е"><input  type="button" value=" 2020-е">
+<link rel="stylesheet" href="https://arzamas.academy/materials/1318">
+<h1 align ="center">По жанрам</h1>
+<input type="button" value=" Все " ><input  type="button" value="Рок" ><input  type="button" value="Поп" ><input  type="button" value="Хип-хоп" ><input  type="button" value="Соул" ><input  type="button" value="Рэп" >
+<input  type="button" value="Народная музыка" >
+  </div>
+<h1 align ="center">Выбор страны</h1>
+<h2 align ="center">Заменить потом картинками стран</h2>
+<div class="top_country">
+<input type="button" value=" Все " id="b1" ><input  type="button" value=" Россия "id="b2" ><input  type="button" value="Италия"  id="b3"><input  type="button" value=" Англия"id="b4"><input  type="button" value=" Германия" id="b5">
+</div>
+
+
+
+</head>
+<body >
+
+
+
+
+
+
+
+
+  <script language="JavaScript" type="text/javascript">
+<!--
+function linklist(what){
+var selectedopt=what.options[what.selectedIndex]
+if (document.getElementById && selectedopt.getAttribute("target")=="new")
+window.open(selectedopt.value)
+else
+window.location=selectedopt.value
+}
+-->
+</script>
+
+  <form name="menu">
+<select name="sel" onChange="linklist(document.menu.sel)">
+<option value="#">Выберите раздел для перехода</option>
+<option title="Переход на главную страницу (откроется в новом окне)"
+        value="http://www.redsimple.ru/" target="new">Главная страница</option>
+<option title="Переход к портфолио по сайтам" value="http://www.redsimple.ru/sites/">Сайты</option>
+<option title="Переход к странице с изображениями" value="http://www.redsimple.ru/foto/">Фото</option>
+<option title="Переход к архиву ссылок" value="http://www.redsimple.ru/links/">Линки</option>
+</select>
+</form>
+<style>
+
+.top_country{
+     text-align: center;
+     background-color: #FFF;
+}
+.top_country input{
+    background-color: #000000;
+    border: none;
+    color: #228B22;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 34px;
+}
+.top_country input:hover{
+    background-color: #C55656;
+}
+
+
+.button{
+     text-align: center;
+     background-color: #FFF;
+}
+.button input{
+    background-color: #000000;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 34px;
+}
+.button input:hover{
+    background-color: #C55656;
+}
+.button:checked {
+  background: red;
+}
+
+</style>
+
+</body>
+</html>
