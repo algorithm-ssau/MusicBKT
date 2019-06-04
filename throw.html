@@ -25,24 +25,42 @@
       </div>
     </div>
   </div>
-  <div id="lll">
+  <div id="lll2">
       <div class="container">
         <div class="row centered">
   <div class="col-lg-2 col-lg-offset-2">
-            <img src="images/r1.jpg" alt="" width="300" height="300">
+            <img src="images/r1.jpg" alt="" width="300" height="300" onclick="GO()">
+            <h4 align="right">Россия</h4>
           </div>
           <div class="col-lg-2 col-lg-offset-2">
             <img src="images/r2.jpg" alt="" width="300" height="300">
+              <h4 align="right">Италия</h4>
           </div>
             </div>
-            </div>
-            </div>
-            </div>
 
+            </div>
+            </div>
+            </div>
+            <div id ="z">
+            <div class="row centered">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h4 id ="h4"> </h4>
+       </div>
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <link href="{% static "bootstrap/css/bootstrap-responsive.css" %}" rel="stylesheet">
   <script src="{% static "bootstrap/js/bootstrap.js" %}"></script>
+
+  <script type="text/JavaScript">
+        function GO() {
+ var p;
+p = document.getElementById('h4');
+p.innerHTML= '<div id="lll"> <div class="container">  <div class="row centered"> <div class="col-lg-2 col-lg-offset-0"> <img src="images/r3.jpg" alt="" width="200" height="200"><h4 align="right">Король и Шут</h4></div><div class="col-lg-2 col-lg-offset-2"><img src="images/r4.jpg" alt="" width="200" height="200"><h4 align="right">Ляпис Трубецкой</h4>  </div><div class="col-lg-2 col-lg-offset-2"> <img src="images/r5.jpg" alt="" width="200" height="200"><h4 align="right">Ленинград</h4></div> </div></div></div>';
+
+        }
+    </script>
+  </script>
+
 </body>
 </html>
